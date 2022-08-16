@@ -22,7 +22,7 @@ export function checkIn(data: checkInReq): Promise<string> {
 }
 
 export function checkInAll(): Promise<string> {
-  return request.get(`/projects/check-in/all`)
+  return request.post(`/projects/check-in/all`)
 }
 
 export function getLatestStatus(params: checkInReq): Promise<boolean> {
